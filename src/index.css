@@ -1,3 +1,82 @@
 @import "tailwindcss";
 
-body { margin: 0; }
+/* MEC Sigorta — Brand Tokens */
+:root{
+  --brand:  13 102 204;   /* ana mavi */
+  --brand2:  7  63 140;   /* koyu mavi */
+  --accent: 13 102 204;   /* focus vb */
+  --text:   15  23  42;
+  --subtext: 75  85  99;
+  --bg:     255 255 255;
+  --soft:   248 250 252;
+  --border: 226 232 240;
+}
+
+html,body{ background: rgb(var(--bg)); color: rgb(var(--text)); }
+body{ margin:0; }
+
+@layer components{
+  /* layout */
+  .container-app{ @apply mx-auto max-w-6xl px-4; }
+
+  /* buttons */
+  .btn{ @apply inline-flex items-center justify-center rounded-xl px-4 py-2 text-sm font-semibold transition; }
+  .btn-primary{ background: rgb(var(--brand)); color: white; }
+  .btn-primary:hover{ background: rgb(var(--brand2)); }
+  .btn-outline{ @apply border bg-white; border-color: rgb(var(--border)); color: rgb(var(--text)); }
+  .btn-outline:hover{ background: rgb(var(--soft)); }
+
+  /* cards */
+  .card{ @apply rounded-3xl bg-white shadow-sm transition; border: 1px solid rgb(var(--border)); }
+  .card-pad{ @apply p-6; }
+
+  /* titles */
+  .section-title{ @apply text-2xl font-bold; color: rgb(var(--text)); }
+  .section-sub{ @apply mt-2 text-sm; color: rgb(var(--subtext)); }
+
+  /* inputs */
+  .input{
+    @apply rounded-xl border px-4 py-3 text-sm outline-none transition;
+    border-color: rgb(var(--border));
+  }
+  .input:focus{
+    border-color: rgb(var(--accent));
+    box-shadow: 0 0 0 3px rgba(13,102,204,0.15);
+  }
+}
+@layer components {
+  .type-cursor {
+    display: inline-block;
+    width: 1ch;
+    margin-left: 2px;
+    animation: blink 1s steps(1) infinite;
+  }
+
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+}
+@layer components {
+  .navlink {
+    @apply relative text-sm font-medium text-gray-600 transition-colors;
+  }
+  .navlink:hover {
+    color: rgb(var(--brand));
+  }
+  .navlink-active {
+    color: rgb(var(--brand));
+  }
+  .navlink-underline {
+    @apply absolute -bottom-2 left-0 h-[2px] w-0 rounded-full transition-all;
+    background: rgb(var(--brand));
+    opacity: 0;
+  }
+  .navlink:hover .navlink-underline {
+    width: 100%;
+    opacity: 1;
+  }
+  .navlink-active .navlink-underline {
+    width: 100%;
+    opacity: 1;
+  }
+}

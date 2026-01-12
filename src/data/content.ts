@@ -6,9 +6,10 @@ export const content = {
     city: "Bursa",
   },
 
-  nav: [
+    nav: [
     { label: "Ana Sayfa", href: "/" },
-    { label: "Hizmetlerimiz", href: "/hizmetler" },
+    { label: "Hizmetler", href: "/hizmetler" },
+    { label: "Hızlı Teklif", href: "/hizli-teklif" },
     { label: "İletişim", href: "/iletisim" },
   ],
 
@@ -18,11 +19,7 @@ export const content = {
       "Trafik, kasko, DASK, sağlık ve işyeri sigortalarında ihtiyaçlarınıza uygun poliçeyi hızlıca bulalım. Şeffaf süreç, güçlü danışmanlık, doğru teminat.",
     primaryCta: "Teklif Al",
     secondaryCta: "İletişime Geç",
-    highlights: [
-      "Hızlı teklif & karşılaştırma",
-      "Şeffaf poliçe anlatımı",
-      "Hasar anında destek",
-    ],
+    highlights: ["Hızlı teklif & karşılaştırma", "Şeffaf poliçe anlatımı", "Hasar anında destek"],
   },
 
   services: {
@@ -30,52 +27,47 @@ export const content = {
     subtitle:
       "İhtiyacınıza uygun sigorta türünü seçin, size en doğru teminatları birlikte belirleyelim.",
     items: [
-      {
-        title: "Trafik Sigortası",
-        desc: "Zorunlu trafik sigortasında hızlı teklif, doğru kapsam.",
-      },
-      {
-        title: "Kasko",
-        desc: "Aracınızı geniş teminatlarla güvenceye alın.",
-      },
-      {
-        title: "DASK",
-        desc: "Zorunlu deprem sigortası ve ek teminat danışmanlığı.",
-      },
-      {
-        title: "Sağlık Sigortası",
-        desc: "Tamamlayıcı/özel sağlık seçeneklerini birlikte kıyaslayalım.",
-      },
-      {
-        title: "Konut Sigortası",
-        desc: "Eviniz için yangın, hırsızlık, su baskını gibi risklere karşı koruma.",
-      },
-      {
-        title: "İşyeri Sigortası",
-        desc: "İş yeriniz ve stoklarınız için kapsamlı çözümler.",
-      },
+      { title: "Trafik Sigortası", desc: "Zorunlu trafik sigortasında hızlı teklif, doğru kapsam." },
+      { title: "Kasko", desc: "Aracınızı geniş teminatlarla güvenceye alın." },
+      { title: "DASK", desc: "Zorunlu deprem sigortası ve ek teminat danışmanlığı." },
+      { title: "Sağlık Sigortası", desc: "Tamamlayıcı/özel sağlık seçeneklerini birlikte kıyaslayalım." },
+      { title: "Konut Sigortası", desc: "Eviniz için yangın, hırsızlık, su baskını gibi risklere karşı koruma." },
+      { title: "İşyeri Sigortası", desc: "İş yeriniz ve stoklarınız için kapsamlı çözümler." },
     ],
   },
 
-  why: {
-    title: "Neden MEC Sigorta?",
-    items: [
-      {
-        title: "Şeffaf danışmanlık",
-        desc: "Poliçe detaylarını anlaşılır biçimde anlatır, doğru teminatı seçmenize yardımcı oluruz.",
-      },
-      {
-        title: "Hızlı süreç",
-        desc: "Teklif–poliçe–yenileme süreçlerini pratik şekilde yönetiriz.",
-      },
-      {
-        title: "Hasar desteği",
-        desc: "Hasar anında yanınızdayız; süreçte yönlendirme ve takip sağlarız.",
-      },
-      {
-        title: "Size uygun paket",
-        desc: "İhtiyacınıza göre kapsam ve bütçe dengesini birlikte kurarız.",
-      },
+    quote: {
+    insuranceOptions: [
+      // Bireysel
+      "Trafik Sigortası",
+      "Kasko",
+      "DASK",
+      "Konut Sigortası",
+      "Tamamlayıcı Sağlık Sigortası",
+      "Özel Sağlık Sigortası",
+      "Ferdi Kaza Sigortası",
+      "Seyahat Sağlık Sigortası",
+      "Hayat Sigortası",
+
+      // Kurumsal / Ticari
+      "İşyeri Sigortası",
+      "KOBİ Paket Sigortası",
+      "Ticari Araç Sigortası",
+      "Filo Kasko",
+      "Nakliyat (Emtia Taşıma) Sigortası",
+      "Yangın Sigortası (Ticari)",
+      "Makine Kırılması Sigortası",
+      "Elektronik Cihaz Sigortası",
+      "İnşaat All Risk (CAR)",
+      "Montaj All Risk (EAR)",
+      "Ürün Sorumluluk Sigortası",
+      "İşveren Sorumluluk Sigortası",
+      "Mesleki Sorumluluk Sigortası",
+      "Üçüncü Şahıs Mali Mesuliyet",
+      "Alacak Sigortası",
+      "Kefalet Sigortası",
+      "D&O (Yönetici Sorumluluk) Sigortası",
+      "Siber Güvenlik Sigortası (Kurumsal)",
     ],
   },
 
